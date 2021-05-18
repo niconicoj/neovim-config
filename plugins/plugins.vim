@@ -29,6 +29,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Colorizer / Rainbow parantheses
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'junegunn/rainbow_parentheses.vim'
+    " Startify Plugin
+    Plug 'mhinz/vim-startify'
+    " Git integration
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
+    " sneak
+    Plug 'justinmk/vim-sneak'
+    " which key
+    Plug 'liuchengxu/vim-which-key'
+    " floaterm
+    Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 
