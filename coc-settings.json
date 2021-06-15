@@ -20,6 +20,16 @@
         "elmTestPath": "elm-test", // optional
         "elmAnalyseTrigger": "change" // optional
       }
+    },
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    },
+    "phplang": {
+      "command": "php",
+      "args": ["/path/to/vendor/felixfbecker/language-server/bin/php-language-server.php"],
+      "filetypes": ["php"]
     }
   }
 }
