@@ -42,6 +42,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
     " floaterm
     Plug 'voldikss/vim-floaterm'
+    " Better Java highlighting
+    Plug 'uiiaoo/java-syntax.vim'
 
 call plug#end()
 
