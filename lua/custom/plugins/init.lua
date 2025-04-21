@@ -71,6 +71,24 @@ return {
 			{ "<leader>e", ":NvimTreeToggle<CR>", desc = "Open [E]xplorer", silent = true },
 		},
 	},
+	{
+		"kndndrj/nvim-dbee",
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+		},
+		build = function()
+			-- Install tries to automatically detect the install method.
+			-- if it fails, try calling it with one of these parameters:
+			--    "curl", "wget", "bitsadmin", "go"
+			require("dbee").install()
+		end,
+		config = function()
+			require("dbee").setup()
+		end,
+		keys = {
+			{ "<leader>db", ":Dbee toggle<CR>", desc = "Toggle [D]bee", silent = true },
+		},
+	},
 }
 
 -- vim: ts=2 sts=2 sw=2 et
